@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="SebApp">
 <head>
-    <title>Angular Todo</title>
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/bootstrap.min.css">
+    <title>SebTrans</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+    <style type="text/css">
+
+    	body {
+    		padding-top: 50px;
+    	}
+
+    </style>
+
 </head>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="#/"><img src="/assets/sebtranslogov14.png" alt="SebTransLogo"></a>
+
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/">About Us</a></li>
+                <li><a href="#/services">Services</a></li>
+                <li><a href="#/careers">Careers</a></li>
+                <li><a href="#/contactus">Contact Us</a></li>
+             </ul>
+
+        </div>
+
+    </nav>
 <body>
-    <h1>Welcome to sebtrans</h1>
+
+	<div ng-view></div>
+
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/service.js"></script>
+<script src='js/directive.js'></script>
+
 </body>
+
+<footer>
+</footer>
+
 </html>
