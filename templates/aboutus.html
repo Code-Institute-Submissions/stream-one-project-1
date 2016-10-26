@@ -16,11 +16,21 @@
 					<div class="mirror" id="leftmirror"></div>
 
     				<div class="truckbody">
-    					<div class="truck" id="top"></div>
+    					<div class="truck" id="top"><h1>Quiq Qoute</h1></div>
     					<div class="truck" id="windscreen">
-    						<h1>Quiq Qoute</h1>
+
+    						<form ng-submit="submitForm()" novalidate>
+    							<div class="form-group">
+    								<label>Enter distance in miles:</label>
+    								<input type="number"  ng-model="value"  min="0" name="quotation" class="form-control">
+    								<button type="reset" class="btn btn-primary">Reset</button>
+    							</div>
+    						</form>
+
     					</div>
-    					<div class="truck" id="front"></div>
+    					<div class="truck" id="front" ng-controller="CalcController">
+    						<p>Your haul will cost £ {{result() | number:2}} to get to the destination !</p>
+    					</div>
     					<div class="truck" id="bumper"></div>
 					</div>
 
