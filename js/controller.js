@@ -9,18 +9,17 @@ angular.module('RouteControllers', [])
 
     	$scope.result = function() {
 
-    		if ($scope.value < 300) {
+    		if ($scope.value <= 300 && $scope.value > 0) {
 
-    		return $scope.value * 1.45
+    				return 300; 
 
-    		}
+    			}
 
-    		else {
+    			else {
 
-    			return $scope.value * 1.45 / 1.10;
-
-    		}
-    	}
+    				return $scope.value * 1.45
+    			}
+    	  	}
     })
 
 

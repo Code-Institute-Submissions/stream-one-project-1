@@ -22,8 +22,8 @@
     						<form ng-submit="submitForm()" novalidate>
     							<div class="form-group">
     								<label>Enter distance in miles:</label>
-    								<input type="number"  ng-model="value"  min="0" name="quotation" class="form-control">
-    								<button type="reset" class="btn btn-primary">Reset</button>
+    								<input type="number"  ng-model="value"  min="0" class="form-control">
+    								<button type="reset" ng-init="value=0" class="btn btn-primary">Reset</button>
     							</div>
     						</form>
 
