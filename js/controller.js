@@ -21,17 +21,26 @@ angular.module('RouteControllers', [])
     			}
     	  	}
     })
-
-
-
-    .controller('ServicesSebController', function($scope) {
-        
-    })
-
+    
     .controller('CareersController', function($scope) {
         
     })
 
     .controller('ContactUsController', function($scope) {
         
-    });
+    })
+
+    .controller('MapController', function($scope) {
+  $scope.title = "Find Us";
+  $scope.maps = {
+    address: 'The Parklands , Dunstable',
+    zoom: 14,
+    width: 400
+  };
+
+  $scope.map = $scope.maps;
+});
+
+    
+
+    

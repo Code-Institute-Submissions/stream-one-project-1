@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-sm-3 sidebox container text-center">
+		<div class="col-sm-3 sidebox container">
 			<h1>About Us</h1>
 			<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -16,10 +16,10 @@
 					<div class="mirror" id="leftmirror"></div>
 
     				<div class="truckbody">
-    					<div class="truck" id="top"><h1>Quiq Qoute</h1></div>
+    					<div class="truck" id="top"><h1>Quiq Quote</h1></div>
     					<div class="truck" id="windscreen">
 
-    						<form ng-submit="submitForm()" novalidate>
+    						<form id="quotecalculator">
     							<div class="form-group">
     								<label>Enter distance in miles:</label>
     								<input type="number"  ng-model="value"  min="0" class="form-control">
@@ -29,7 +29,7 @@
 
     					</div>
     					<div class="truck" id="front" ng-controller="CalcController">
-    						<p>Your haul will cost £ {{result() | number:2}} to get to the destination !</p>
+    						<h3>Your goods will cost</br> £ {{result() | number:2}}</br> to get to the destination !</h3>
     					</div>
     					<div class="truck" id="bumper"></div>
 					</div>
@@ -43,13 +43,14 @@
 				</div>
 			
 		</div>
-		<div class="col-sm-3 sidebox container text-center">
-			<h1>Find Us on: </h1>
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Facebook</a></li>
-			</ul>
+		<div class="col-sm-3 sidebox container">
+			<h1>Services</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
 </div>

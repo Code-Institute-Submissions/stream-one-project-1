@@ -2,6 +2,8 @@
 <html ng-app="SebApp">
 <head>
     <title>SebTrans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
@@ -10,7 +12,8 @@
     <style type="text/css">
 
     	body {
-    		padding-top: 50px;
+    		padding-top: 60px;
+            font-family: 'Montserrat', sans-serif;
     	}
 
     </style>
@@ -20,13 +23,12 @@
         <div class="container">
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="#/"><img src="/assets/sebtranslogov14.png" alt="SebTransLogo"></a>
+                <a class="navbar-brand" href="#/"><img class="img-responsive2" src="/assets/seblogov144.png" alt="SebTransLogo"></a>
 
             </div>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#/">About Us</a></li>
-                <li><a href="#/services">Services</a></li>
                 <li><a href="#/careers">Careers</a></li>
                 <li><a href="#/contactus">Contact Us</a></li>
              </ul>
@@ -34,18 +36,23 @@
         </div>
 
     </nav>
-<body>
+<body background="assets/sebback03.png">
 
 	<div ng-view></div>
 
 <script src="js/app.js"></script>
 <script src="js/controller.js"></script>
 <script src="js/service.js"></script>
-<script src='js/directive.js'></script>
+<script src="js/directive.js"></script>
+<script src="https://use.fontawesome.com/a411e83d00.js"></script>
+
 
 </body>
 
-<footer>
+<footer class="navbar-inverse navbar-fixed-bottom">
+  <div class="container-fluid">
+    <a href="#">Copyright@2016</a>
+  </div>
 </footer>
 
 </html>

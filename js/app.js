@@ -1,26 +1,24 @@
-angular.module('SebApp', ['ngRoute', 'RouteControllers']);
+angular.module('SebApp', ['ngRoute', 'RouteControllers' ]);
  
 angular.module('SebApp').config(function($routeProvider) {
  
     $routeProvider.when('/', {
-        templateUrl: 'templates/aboutus.html'
+        templateUrl: 'templates/aboutus.html',
+        controller: 'HomeController'
         
         
-    })
-    .when('/services', {
-        templateUrl: 'templates/services.html'
-        
-      
     })
 
     .when('/careers', {
-        templateUrl: 'templates/careers.html'
+        templateUrl: 'templates/careers.html',
+        controller: 'CareersController'
        
         
     })
 
     .when('/contactus', {
-        templateUrl: 'templates/contactus.html'
+        templateUrl: 'templates/contactus.html',
+        controller: 'MapController'
         
         
     });
