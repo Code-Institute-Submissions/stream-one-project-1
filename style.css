@@ -31,21 +31,21 @@ footer {
 	border-radius: 10px;
 	margin-top: 5px;
 	text-align: center;
-	
-
 }
 
 .container1 {
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+	text-align: center;
+	vertical-align: middle;	
 }
 
 .mirror {
 	display: inline-flex;
 	background-color: blue;
-	height: 140px;
-	width: 50px;
-	margin-top: 70px;
+	height: 120px;
+	width: 40px;
+	margin-top: 50px;
 	border-radius: 5px;	
 }
 
@@ -68,8 +68,8 @@ footer {
 
 
 #top {
-	width: 450px;
-	height: 60px;
+	width: 350px;
+	height: 40px;
 
 
 }
@@ -77,21 +77,20 @@ footer {
 #windscreen {
 	background-color: #77787a;
 	border: 2px solid blue;
-	width: 450px;
-	height: 140px;
+	width: 350px;
+	height: 120px;
 	color: blue;
-	padding-top: 25px;
 }
 
 #front {
-	width: 470px;
-	height: 220px;
-	padding-top: 50px;
+	width: 370px;
+	height: 150px;
+	padding-top: 30px;
 }
 
 #bumper {
-	width: 470px;
-	height: 50px;
+	width: 370px;
+	height: 30px;
 }
 
 .wheels {
@@ -102,18 +101,18 @@ footer {
 
 #leftwheel {
 	background-color: blue;
-	height: 50px;
-	width: 80px;
+	height: 30px;
+	width: 70px;
 	border-radius: 5px;
-	margin-right: 150px;
+	margin-right: 100px;
 }
 
 #rightwheel {
 	background-color: blue;
-	height: 50px;
-	width: 80px;
+	height: 30px;
+	width: 70px;
 	border-radius: 5px;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 
 
