@@ -101,7 +101,7 @@ footer {
 
 #leftwheel {
 	background-color: blue;
-	height: 30px;
+	height: 35px;
 	width: 70px;
 	border-radius: 5px;
 	margin-right: 100px;
@@ -109,12 +109,14 @@ footer {
 
 #rightwheel {
 	background-color: blue;
-	height: 30px;
+	height: 35px;
 	width: 70px;
 	border-radius: 5px;
 	margin-left: 100px;
 }
 
-
+.contactus {
+	
+}
 
 </style>
