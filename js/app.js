@@ -1,4 +1,4 @@
-angular.module('SebApp', ['ngRoute', 'RouteControllers' ]);
+angular.module('SebApp', ['ngRoute', 'RouteControllers', 'SebAppDirectives']);
  
 angular.module('SebApp').config(function($routeProvider) {
  
@@ -18,7 +18,7 @@ angular.module('SebApp').config(function($routeProvider) {
 
     .when('/contactus', {
         templateUrl: 'templates/contactus.html',
-        controller: 'MapController'
+        controller: 'ContactUsController'
         
         
     });

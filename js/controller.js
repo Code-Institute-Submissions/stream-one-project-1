@@ -26,20 +26,59 @@ angular.module('RouteControllers', [])
         
     })
 
-    .controller('ContactUsController', function($scope) {
+    .controller('ContactUsController', function ($scope) {
         
+        $scope.companyNameLabel = "Company Name: *";
+        $scope.emailLabel = "E-mail:";
+        $scope.messageLabel = "Message:";
+        $scope.collectFormData;
+        
+        $scope.storeFormData = function () {
+            
+            $scope.log = console.log($scope.collectFormData);
+
+            
+            $scope.companyName = " ";
+            $scope.email = " ";
+            $scope.message = " ";
+        }
+            
     })
 
     .controller('MapController', function($scope) {
-  $scope.title = "Find Us";
-  $scope.maps = {
-    address: 'The Parklands , Dunstable',
-    zoom: 14,
-    width: 400
-  };
 
-  $scope.map = $scope.maps;
-});
+         function initMap() {
+
+        var latlng = new google.maps.LatLng(51.456425, 0.203897);
+
+        
+        var options = {
+            zoom: 5,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            navigationControl: true,
+            mapTypeControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true
+        };
+
+        
+        var map = new google.maps.Map(document.getElementById('googleMap'), options);
+
+        
+        var marker1 = new google.maps.Marker({
+            position: latlng,
+            map: map
+        });
+
+    }
+
+        
+        google.maps.event.addListener(marker1, 'click', function () {
+            infowindow.open(map, marker1);
+        });
+
+    });
 
     
 

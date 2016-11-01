@@ -1,4 +1,4 @@
-<div class="container contactus">
+<div class="container contactus" >
 	<div class="col-md-2">
 		<h4>Fallow Us</h4>
 		<ul class="list-unstyled">
@@ -10,7 +10,7 @@
 
 	<div class="col-md-3">
 		<h4>Find Us</h4>
-		<div ng-include="'templates/contactusmap.html'"></div>
+		<div contactus-map></div>
 	</div>
 
 	<div class="col-md-7">
@@ -25,15 +25,15 @@
 		<div class="col-md-8">
 			<div class="row">
         		<div class="col-sm-6 form-group">
-          			<input class="form-control" id="name" name="name" placeholder="Company Name" type="text" required>
+          			<input class="form-control" name="companyname" type="text" ng-model="companyNameLabel" required>
         		</div>
 
         		<div class="col-sm-6 form-group">
-          			<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          			<input class="form-control" name="email" type="email" ng-model="emailLabel" required>
         		</div>
         	</div>
 
-			<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+			<textarea class="form-control" name="comments" rows="5" ng-model="messageLabel"></textarea>
 
       		<div class="row">
         		<div class="col-md-12 form-group">
