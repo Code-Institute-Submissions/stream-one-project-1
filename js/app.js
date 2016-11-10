@@ -9,6 +9,13 @@ angular.module('SebApp').config(function($routeProvider) {
         
     })
 
+    .when('/services', {
+        templateUrl: 'templates/services.html'
+        
+       
+        
+    })
+
     .when('/careers', {
         templateUrl: 'templates/careers.html',
         controller: 'CareersController'
