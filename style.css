@@ -38,6 +38,7 @@ footer {
 	border-radius: 10px;
 	margin-top: 2px;
 	text-align: center;
+	color: black;
 }
 
 .container1 {
@@ -128,12 +129,17 @@ footer {
 	justify-content: center;
 	text-align: center;
 }
-.servicesbox {
+.col-md-12 {
 	border: 5px solid blue;
 	border-radius: 10px;
-	margin: 2px;
 	text-align: center;
-
+	display: inline;
+	margin: 5px;
+	padding: 10px;
+	color: black;
 }
+
+
+
 
 </style>
