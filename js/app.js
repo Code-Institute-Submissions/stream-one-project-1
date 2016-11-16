@@ -1,4 +1,4 @@
-angular.module('SebApp', ['ngRoute', 'RouteControllers', 'SebAppDirectives']);
+angular.module('SebApp', ['ngRoute', 'RouteControllers', 'SebAppDirectives', 'JobsService']);
  
 angular.module('SebApp').config(function($routeProvider) {
  

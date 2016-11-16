@@ -22,9 +22,19 @@ angular.module('RouteControllers', [])
     	  	}
     })
     
-    .controller('CareersController', function($scope) {
-        
+    .controller('CareersController', function($scope, JobsAPIService) {
+
+        JobsApiService.getJobs().then(function(data) {
+
+            $scope.jobs = data;
+
+              }).catch (function() {
+
+            $scope.error = 'unable to get the jobs';
+
+            });
     })
+    
 
     .controller('ContactUsController', function ($scope) {
         

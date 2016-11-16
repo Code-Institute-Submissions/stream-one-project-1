@@ -1,6 +1,14 @@
 <div class="container">
 	<h1>Welcome !</h1>
-	<p>If you have a Class 1 Driving Licence, a valid CPC card, a valid DigiTacho card, no more then 6 points on your Driving Licence and at least 2 years driving experience in UK, then we have a job for you. Fill the form below and we will contact you !</p>
+	<p>We have the following jobs available ! Please use the <a href="#/contactus">Contact Us</a> page if you are interested in joining our team !</p>
+
+	<table>
+  		<tr ng-repeat="job in jobs">
+    		<td>{{ job.Name }}</td>
+    		<td>{{ job.Description }}</td>
+  		</tr>
+	</table>
+
 
 
 </div>
