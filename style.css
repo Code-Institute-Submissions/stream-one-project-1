@@ -132,7 +132,7 @@ footer {
 	justify-content: center;
 	text-align: center;
 }
-.col-md-12 {
+.col-sm-12 {
 	border: 5px solid blue;
 	border-radius: 10px;
 	text-align: center;
@@ -141,6 +141,14 @@ footer {
 	padding: 10px;
 	color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        display: none;
+    }
+}
+
+
 
 
 
