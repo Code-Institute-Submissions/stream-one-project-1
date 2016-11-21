@@ -1,8 +1,8 @@
-angular.module('SebAppDirectives', [])
-    .directive('contactUs', function () {
+angular.module('SebAppDirectives',[])
+    .directive('jobs', function () {
         return {
-            restrict: "EA",
-            templateUrl: "templates/directives/contactus-map.html"
+            restrict: 'EA',
+            templateUrl: 'templates/directives/jobs.html'
         };
-    })
+    });
     

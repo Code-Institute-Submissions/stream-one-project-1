@@ -38,7 +38,7 @@ angular.module('RouteControllers', [])
 
     .controller('ContactUsController', function ($scope) {
         
-        $scope.companyNameLabel = "Company Name: *";
+        $scope.nameLabel = "Name:";
         $scope.emailLabel = "E-mail:";
         $scope.messageLabel = "Message:";
         $scope.collectFormData;

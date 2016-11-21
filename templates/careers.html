@@ -1,36 +1,9 @@
 <div class="container">
 	<div class="col-md-12">
 		<h1>Welcome !</h1>
-		<p>We have the following jobs available ! </p>
-		<div class="table-responsive">
-			<table class="table">
-				<tr>
-					<th>Job Title</th>
-					<th>Job Description</th>
-				</tr>
-  				<tr ng-repeat="job in jobs">
-    				<td>{{ job.Name }}</td>
-    				<td>{{ job.Description }}</td>
-  				</tr>
-			</table>
-		</div>
-		<p>Please use the form below if you are interested in joining our team !</p>
-		<div class="row">
-        		<div class="col-sm-6 form-group">
-          			<input class="form-control" name="companyname" type="text" ng-model="companyNameLabel" required>
-        		</div>
+		<p>We have the following jobs available ! Please use the <a href="#/contactus">Contact Us</a> page if you are interested in joining our team ! </p>
 
-        		<div class="col-sm-6 form-group">
-          			<input class="form-control" name="email" type="email" ng-model="emailLabel" required>
-        		</div>
-        	</div>
-
-			<textarea class="form-control" name="comments" rows="5" ng-model="messageLabel"></textarea>
-
-      		<div class="row">
-        		<div class="col-sm-12 form-group">
-          			<button class="btn btn-primary" type="submit">Send</button>
-        		</div>
-      		</div> 
+		<div jobs></div>
+		
 	</div>
 </div>
