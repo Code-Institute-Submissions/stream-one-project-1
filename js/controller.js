@@ -53,11 +53,9 @@ angular.module('RouteControllers', [])
             $scope.message = " ";
         }
             
-    })
+   
 
-    .controller('MapController', function($scope) {
-
-         function initMap() {
+        
 
         var latlng = new google.maps.LatLng(51.456425, 0.203897);
 
@@ -74,14 +72,17 @@ angular.module('RouteControllers', [])
 
         
         var map = new google.maps.Map(document.getElementById('googleMap'), options);
-
+        $scope.map = map
+        console.log (map)
         
         var marker1 = new google.maps.Marker({
             position: latlng,
             map: map
         });
 
-    }
+        
+
+        
 
         
         google.maps.event.addListener(marker1, 'click', function () {
