@@ -36,3 +36,7 @@ Website will be structured on 4 pages to meet the client reqirements.
 2. Services - will describe the activities / services that company offers.
 3. Careers - will contain the list of available jobs.
 4. Contact Us - will contain a contact form for clients, company address and a map
+
+
+
+The website does not work on Safari.

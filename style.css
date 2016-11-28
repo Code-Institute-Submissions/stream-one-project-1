@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-
 <style type="text/css">
-
-
-
 body {
 	margin-top: 100px;
+	}
 
-}
 footer {
 	background-color: #333;
 	position: absolute;
-	
-}
+	}
+
 #copyfooter {
 	padding-top: 15px;
 	font-size: 0.75em;
 }
+
 #social {
 	font-size: 1.5em;
 }
-
 
 #quotecalculator {
 	padding-left: 100px;
@@ -30,6 +26,7 @@ footer {
 .navbar-brand {
   padding: 0px;
 }
+
 .navbar-brand>img {
   height: 100%;
   padding: 0px;
@@ -77,12 +74,9 @@ footer {
 	align-items: center;
 }
 
-
 #top {
 	width: 350px;
 	height: 40px;
-
-
 }
 
 #windscreen {
@@ -96,7 +90,9 @@ footer {
 #front {
 	width: 370px;
 	height: 150px;
-	padding-top: 30px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #bumper {
@@ -140,6 +136,10 @@ footer {
 	margin: 5px;
 	padding: 10px;
 	color: black;
+}
+
+th	 {
+	text-align: center;
 }
 
 @media screen and (max-width: 768px) {

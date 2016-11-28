@@ -5,38 +5,31 @@
 			<p>Sebtrans Ltd is a newly formed company and his owner used to be an HGV Driver, having years of experience in the transport industry. Sebtrans Ltd is in continuous expansion looking forward to improve the quality of their services and to join the other companies in the competitive transport industry. Their goal is to provide an impeccable service to their customers.</p>
 		</div>
 		<div class="col-sm-6">
-			
-				<div class="container1">
-
-					<div class="mirror" id="leftmirror"></div>
-
-    				<div class="truckbody">
-    					<div class="truck" id="top"><h4>Quiq Quote</h4></div>
-    					<div class="truck" id="windscreen">
-
-    						<form id="quotecalculator">
-    							<div class="form-group">
-    								<label>Enter distance in miles:</label>
-    								<input type="number"  ng-model="value"  min="0" class="form-control">
-    								<button type="reset" ng-init="value=0" class="btn btn-primary">Reset</button>
-    							</div>
-    						</form>
-
-    					</div>
-    					<div class="truck" id="front" ng-controller="CalcController">
-    						<h4>Your goods will cost</br> £ {{result() | number:2}}</br> to get to the destination !</h4>
-    					</div>
-    					<div class="truck" id="bumper"></div>
+			<div class="container1">
+				<div class="mirror" id="leftmirror"></div>
+				<div class="truckbody">
+					<div class="truck" id="top"><h4>Quiq Quote</h4></div>
+					<div class="truck" id="windscreen">
+						<form id="quotecalculator">
+    						<div class="form-group">
+    							<label>Enter distance in miles:</label>
+    							<input type="number"  ng-model="value"  min="0" class="form-control">
+    						</div>
+    					</form>
 					</div>
-
-    				<div class="mirror" id="rightmirror"></div>
+    				<div class="truck" id="front" ng-controller="CalcController">
+    					<h4>Your goods will cost</br> £ {{result() | number:2}}</br> to get to the destination !</h4>
+    					<p>Up to 300 miles the price is fixed - £300.</p>
+    					<p>The quote is for a full 20T load.</p>
+    				</div>
+    				<div class="truck" id="bumper"></div>
 				</div>
-
-				<div class="wheels">
-					<div id="leftwheel"></div>
-					<div id="rightwheel"></div>
-				</div>
-			
+				<div class="mirror" id="rightmirror"></div>
+			</div>
+			<div class="wheels">
+				<div id="leftwheel"></div>
+				<div id="rightwheel"></div>
+			</div>
 		</div>
 		<div class="col-sm-3 sidebox container">
 			<h2>About Us</h2>

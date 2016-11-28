@@ -1,65 +1,38 @@
 angular.module('RouteControllers', [])
 
     .controller('HomeController', function($scope) {
-
-    	
     })
 
     .controller('CalcController', function($scope) {
-
-    	$scope.result = function() {
-
-    		if ($scope.value <= 300 && $scope.value > 0) {
-
-    				return 300; 
-
-    			}
-
-    			else {
-
-    				return $scope.value * 1.45
+        $scope.result = function() {
+            if ($scope.value <= 300 && $scope.value > 0) {
+                return 300; 
+            } else {
+                return $scope.value * 1.45
     			}
     	  	}
     })
     
     .controller('CareersController', function($scope, JobsAPIService) {
-
-        JobsApiService.getJobs().then(function(data) {
-
-            $scope.jobs = data;
-
-              }).catch (function() {
-
-            $scope.error = 'unable to get the jobs';
-
-            });
+        JobsAPIService.getJobs().then(function(response) {
+            $scope.jobs = response
+            $scope.job.Title = jobs.Title
+            $scope.job.Description = jobs.Description 
+        })
     })
-    
 
     .controller('ContactUsController', function ($scope) {
-        
         $scope.nameLabel = "Name:";
         $scope.emailLabel = "E-mail:";
         $scope.messageLabel = "Message:";
         $scope.collectFormData;
-        
         $scope.storeFormData = function () {
-            
             $scope.log = console.log($scope.collectFormData);
-
-            
             $scope.companyName = " ";
             $scope.email = " ";
             $scope.message = " ";
         }
-            
-   
-
-        
-
         var latlng = new google.maps.LatLng(51.456425, 0.203897);
-
-        
         var options = {
             zoom: 5,
             center: latlng,
@@ -69,26 +42,16 @@ angular.module('RouteControllers', [])
             scrollwheel: false,
             disableDoubleClickZoom: true
         };
-
-        
         var map = new google.maps.Map(document.getElementById('googleMap'), options);
         $scope.map = map
         console.log (map)
-        
         var marker1 = new google.maps.Marker({
             position: latlng,
             map: map
         });
-
-        
-
-        
-
-        
         google.maps.event.addListener(marker1, 'click', function () {
             infowindow.open(map, marker1);
         });
-
     });
 
     

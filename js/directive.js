@@ -2,7 +2,7 @@ angular.module('SebAppDirectives',[])
     .directive('jobs', function () {
         return {
             restrict: 'EA',
-            templateUrl: 'templates/directives/jobs.html'
+            templateUrl: 'templates/directives/jobs-list.html'
         };
     });
 
