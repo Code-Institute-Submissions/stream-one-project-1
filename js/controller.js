@@ -33,9 +33,9 @@ angular.module('RouteControllers', [])
             $scope.email = " ";
             $scope.message = " ";
         }
-        var latlng = new google.maps.LatLng(51.456425, 0.203897);
+        var latlng = new google.maps.LatLng(51.457567, 0.201084);
         var options = {
-            zoom: 5,
+            zoom: 11,
             center: latlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             navigationControl: true,
