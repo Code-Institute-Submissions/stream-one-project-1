@@ -15,9 +15,10 @@ angular.module('RouteControllers', [])
     
     .controller('CareersController', function($scope, JobsAPIService) {
         JobsAPIService.getJobs().then(function(response) {
-            $scope.jobs = response
-            $scope.job.Title = jobs.Title
-            $scope.job.Description = jobs.Description 
+            jobs = {};
+            $scope.jobs = response 
+            $scope.jobs.Title = jobs.Title
+            $scope.jobs.Description = jobs.Description 
         })
     })
 
