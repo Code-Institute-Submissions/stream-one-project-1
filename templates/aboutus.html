@@ -1,11 +1,12 @@
+<link rel="stylesheet" type="text/css" href="style.css">
 <div class="container">
 	<div class="row">
-		<div class="col-sm-3 sidebox container">
+		<div class="col-xs-3 col-md-3 sidebox">
 			<h2>About Us</h2>
 			<p>Sebtrans Ltd is a newly formed company and his owner used to be an HGV Driver, having years of experience in the transport industry. Sebtrans Ltd is in continuous expansion looking forward to improving the quality of their services and to join the other companies in the competitive transport industry. Their goal is to offer an impeccable service to their customers.</p>
 		</div>
-		<div class="col-sm-6">
-			<div class="container1">
+		<div class="col-xs-6 col-md-6">
+			<div class="calculatorcontainer">
 				<div class="mirror" id="leftmirror"></div>
 				<div class="truckbody">
 					<div class="truck" id="top"><h4>Quiq Quote</h4></div>
@@ -13,12 +14,12 @@
 						<form id="quotecalculator">
     						<div class="form-group">
     							<label>Enter distance in miles:</label>
-    							<input type="number"  ng-model="value"  min="0" class="form-control">
+    							<input type="number" ng-model="value" min="0" class="form-control">
     						</div>
     					</form>
 					</div>
     				<div class="truck" id="front" ng-controller="CalcController">
-    					<h4>Your goods will cost</br> £ {{result() | number:2}}</br> to get to the destination !</h4>
+    					<h4>Your goods will cost</br>{{ result() | currency:"£":2 }}</br> to get to the destination !</h4>
     					<p>Up to 300 miles the price is fixed - £300.</p>
     					<p>The quote is for a full 20T load.</p>
     				</div>
@@ -31,7 +32,7 @@
 				<div id="rightwheel"></div>
 			</div>
 		</div>
-		<div class="col-sm-3 sidebox container">
+		<div class="col-xs-3 col-md-3 sidebox">
 			<h2>About Us</h2>
 			<p>Being a small company it has the advantage of a more straightforward communication between  departments and the ability to resolve issues more rapidly, contributing to a more accurate and clean service. Meeting the demands of clients in the modern world of transportation is their primary goal,
 			despite any negative factors that day-to-day work encounters.</p>

@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<style type="text/css">
 body {
-	margin-top: 100px;
-	}
-
+	padding-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px;
+    background-color: #8080ff;
+}
 footer {
 	background-color: #333;
 	position: absolute;
-	}
-
+}
 #copyfooter {
 	padding-top: 15px;
 	font-size: 0.75em;
 }
-
 #social {
 	font-size: 1.5em;
 }
-
 #quotecalculator {
 	padding-left: 100px;
 	padding-right: 100px;
 }
-
 .navbar-brand {
   padding: 0px;
 }
-
 .navbar-brand>img {
   height: 100%;
   padding: 0px;
   width: auto;
 }
-
 .sidebox {
 	border: 5px solid blue;
 	border-radius: 10px;
@@ -40,14 +34,12 @@ footer {
 	text-align: center;
 	color: black;
 }
-
-.container1 {
+.calculatorcontainer {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	vertical-align: middle;	
 }
-
 .mirror {
 	display: inline-flex;
 	background-color: blue;
@@ -56,7 +48,6 @@ footer {
 	margin-top: 50px;
 	border-radius: 5px;	
 }
-
 .truckbody {
 	display: inline-flex;
 	flex-direction: column;
@@ -64,7 +55,6 @@ footer {
 	align-content: flex-start;
 	align-items: center;	
 }
-
 .truck {
 	background-color: blue;
 	border-radius: 10px;
@@ -73,12 +63,10 @@ footer {
 	color: white;
 	align-items: center;
 }
-
 #top {
 	width: 350px;
 	height: 40px;
 }
-
 #windscreen {
 	background-color: transparent;
 	border: 2px solid blue;
@@ -86,7 +74,6 @@ footer {
 	height: 120px;
 	color: blue;
 }
-
 #front {
 	width: 370px;
 	height: 150px;
@@ -94,18 +81,15 @@ footer {
 	padding-left: 5px;
 	padding-right: 5px;
 }
-
 #bumper {
 	width: 370px;
 	height: 30px;
 }
-
 .wheels {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-
 #leftwheel {
 	background-color: blue;
 	height: 30px;
@@ -113,7 +97,6 @@ footer {
 	border-radius: 5px;
 	margin-right: 100px;
 }
-
 #rightwheel {
 	background-color: blue;
 	height: 30px;
@@ -121,14 +104,13 @@ footer {
 	border-radius: 5px;
 	margin-left: 100px;
 }
-
 .services {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 }
-.col-sm-12 {
+.col-xs-12.col-md-12 {
 	border: 5px solid blue;
 	border-radius: 10px;
 	text-align: center;
@@ -137,22 +119,21 @@ footer {
 	padding: 10px;
 	color: black;
 }
-
 th	 {
 	text-align: center;
 }
-
 @media screen and (max-width: 768px) {
-    .container1 {
-        display: none;
-    }
+  	.wheels {
+  		display: none;
+  	}
+  	body {
+  		padding-top: 250px;
+  		padding-bottom: 200px;
+  	}
+  	.col-xs-6 {
+  		display: none;
+  	}
+  	.sidebox {
+  		width: 100%;
+  	}
 }
-
-
-
-
-
-
-
-
-</style>

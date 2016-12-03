@@ -1,34 +1,44 @@
+<link rel="stylesheet" type="text/css" href="style.css">
 <div class="container" >
 	<div class="col-sm-12">
 		<div class="col-sm-5">
 			<h4>Find Us</h4>
 				<div class="map-container"  id="googleMap" style="width: 100%; height: 300px"  >
-    				<img class="img-thumbnail img-responsive" ng-src="https://maps.googleapis.com/maps/api/staticmap?center={{ map.address }}&zoom={{ map.zoom }}&size={{ mapDimensions() }}&markers=color:red|{{ map.address }}"/>
+    				<img class="img-thumbnail img-responsive" ng-src="https://maps.googleapis.com/maps/api/staticmap?center" alt="Map" />
     			</div>
     	</div> 
 		<div class="col-sm-7">
 			<h4>Contact Us</h4>
-				<div class="col-sm-4">
-					<p><span class="glyphicon glyphicon-phone"></span>Phone: +44 90909090</p>
-      				<p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> 
-				</div>
-				<div class="col-md-8">
-					<div class="row">
-        				<div class="col-sm-6 form-group">
-          					<input class="form-control" name="name" type="text" ng-model="nameLabel" required>
+			<div class="col-sm-4">
+				<p><span class="glyphicon glyphicon-phone"></span>  Phone:</br>+44 90909090</p>
+  				<p><span class="glyphicon glyphicon-envelope"></span>  Email:</br>mail@mail.com</p>
+  				<p><span class="glyphicon glyphicon-home"></span>  Address:</br>149 Dartford Way, Dartford, Kent, UK</p> 
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+                    <form name="contactForm" ng-submit="submitForm()" novalidate>
+        				<div class="col-sm-6 form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
+          					<input class="form-control" name="name" type="text" ng-model="name" placeholder="Name" ng-minlength="3" required>
+                            <p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">Your name is required.</p>
+                            <p ng-show="contactForm.name.$error.minlength" class="help-block">Username is too short.</p>
         				</div>
-						<div class="col-sm-6 form-group">
-          					<input class="form-control" name="email" type="email" ng-model="emailLabel" required>
+						<div class="col-sm-6 form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
+          					<input class="form-control" name="email" type="email" ng-model="email" placeholder="E-mail" required>
+                            <p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Your email is required.</p>
+                            <p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Enter a valid email.</p>
         				</div>
         			</div>
-					<textarea class="form-control" name="comments" rows="5" ng-model="messageLabel"></textarea>
+					<textarea class="form-control" name="comments" rows="5" ng-model="message" placeholder="Message" ></textarea>
 					<div class="row">
         				<div class="col-xs-12 form-group">
-          			<button class="btn btn-primary" type="submit">Send</button>
-        		</div>
-      		</div> 
-    	</div>
-	</div>
+          			       <button class="btn btn-primary" type="submit" ng-disabled="contactForm.$invalid">Send</button>
+        	            </div>
+    	            </div>
+                    </form> 
+	            </div>
+            </div>
+        </div>
+    </div>
 </div>										
 
 

@@ -15,24 +15,27 @@ angular.module('RouteControllers', [])
     
     .controller('CareersController', function($scope, JobsAPIService) {
         JobsAPIService.getJobs().then(function(response) {
-            jobs = {};
-            $scope.jobs = response 
-            $scope.jobs.Title = jobs.Title
-            $scope.jobs.Description = jobs.Description 
-        })
+            $scope.jobs = response.data
+            })
     })
 
     .controller('ContactUsController', function ($scope) {
-        $scope.nameLabel = "Name:";
-        $scope.emailLabel = "E-mail:";
-        $scope.messageLabel = "Message:";
-        $scope.collectFormData;
-        $scope.storeFormData = function () {
-            $scope.log = console.log($scope.collectFormData);
-            $scope.companyName = " ";
-            $scope.email = " ";
-            $scope.message = " ";
-        }
+        $scope.submitForm = function() {
+            if ($scope.contactForm.$valid) {
+            $scope.name = "";
+            $scope.email = "";
+            $scope.message = "";
+            $scope.collectFormData;
+            $scope.storeFormData = function() {
+                $scope.log = console.log($scope.collectFormData);
+                $scope.name = " ";
+                $scope.email = " ";
+                $scope.message = " ";
+            alert("Thank You ! We will contact you shortly !");
+                }
+            }
+        };
+        
         var latlng = new google.maps.LatLng(51.457567, 0.201084);
         var options = {
             zoom: 11,
@@ -53,8 +56,4 @@ angular.module('RouteControllers', [])
         google.maps.event.addListener(marker1, 'click', function () {
             infowindow.open(map, marker1);
         });
-    });
-
-    
-
-    
+    });   

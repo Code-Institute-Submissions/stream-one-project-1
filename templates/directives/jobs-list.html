@@ -1,13 +1,15 @@
 <div class="table-responsive">
     <table class="table">
-        <tr>
-            <th>Job Title</th>
-            <th>Job Description</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Job Description</th>
+            </tr>
+        </thead>
         <tr ng-repeat="job in jobs">
             <td>{{ job.Title }}</td>
             <td>{{ job.Description }}</td>
-            </tr>
+        </tr>
     </table>
 </div>
 
