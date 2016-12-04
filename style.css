@@ -110,7 +110,7 @@ footer {
 	justify-content: center;
 	text-align: center;
 }
-.col-xs-12.col-md-12 {
+.col-xs-12 {
 	border: 5px solid blue;
 	border-radius: 10px;
 	text-align: center;
@@ -118,6 +118,9 @@ footer {
 	margin: 5px;
 	padding: 10px;
 	color: black;
+}
+.col-sm-12 {
+	padding-top: 20px;
 }
 th	 {
 	text-align: center;
