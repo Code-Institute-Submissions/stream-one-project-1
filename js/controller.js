@@ -21,18 +21,11 @@ angular.module('RouteControllers', [])
 
     .controller('ContactUsController', function ($scope) {
         $scope.submitForm = function() {
-            if ($scope.contactForm.$valid) {
-                $scope.collectFormData = function() {
-                $scope.name = " ";
-                $scope.email = " ";
-                $scope.message = " ";
-                };
-            $scope.storeFormData = function() {
-                $scope.log = console.log($scope.collectFormData);
-                $scope.name = " ";
-                $scope.email = " ";
-                $scope.message = " ";
-                };
+            if ($scope.contactForm.$valid) { 
+                $scope.name = "";
+                $scope.email = "";
+                $scope.message = "";
+                $scope.collectFormData
             alert("Thank You ! We will contact you shortly !");
             }
         };
