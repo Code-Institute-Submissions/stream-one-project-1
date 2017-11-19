@@ -6,5 +6,4 @@ angular.module('JobsService', [])
 		return {
       		getJobs: getJobs
       	};
-    });
-  
+    });  
