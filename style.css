@@ -127,12 +127,15 @@ footer {
 th	 {
 	text-align: center;
 }
+#social {
+	text-align: center;
+}
 @media screen and (max-width: 768px) {
   	.wheels {
   		display: none;
   	}
   	body {
-  		padding-top: 70px;
+  		padding-top: 100px;
   		padding-bottom: 70px;
   	}
   	#calcwrapper {
