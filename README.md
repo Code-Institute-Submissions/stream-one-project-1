@@ -4,16 +4,14 @@ Final Project CodeInstitute Full Stack Software Developer  Stream One
 
 The project guidelines are as follows:
 
-- Use AngularJS as your framework.
+- Use AngularJS as a framework.
 - Use Angular routing to enable navigation.
 - Incorporate at least 1 service and 1 directive.
-- Use as much functionality as you see appropriate from the lessons.
 - Use bootstrap or flexbox for main navigation and grid layout.
 - Include at least one page that contains a form with validation.
-- Use Git to maintain your source code.
-- You must deploy the final version of your code to an internet hosting site.
+- Use Git to maintain the source code.
 - Use semantic HTML5 markup.
-- Make your web site as responsive as possible. Use appropriate testing sites to test your web sites in as many different environments as possible.
+- Make the web site as responsive as possible. Use appropriate testing sites to test the web site in as many different environments as possible.
 
 Stakeholder information
 
@@ -38,5 +36,5 @@ Website will be structured on 4 pages to meet the client reqirements.
 4. Contact Us - will contain a contact form for clients, company address and a map
 
 
-
+# Notes
 The website does not work on Safari.
