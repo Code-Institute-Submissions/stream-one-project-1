@@ -132,10 +132,9 @@ th	 {
   		display: none;
   	}
   	body {
-  		padding-top: 250px;
   		padding-bottom: 200px;
   	}
-  	.col-xs-6 {
+  	#calcwrapper {
   		display: none;
   	}
   	.sidebox {
