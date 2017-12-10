@@ -132,6 +132,7 @@ th	 {
   		display: none;
   	}
   	body {
+  		padding-top: 250px;
   		padding-bottom: 200px;
   	}
   	#calcwrapper {
@@ -139,5 +140,8 @@ th	 {
   	}
   	.sidebox {
   		width: 100%;
+  	}
+  	#social {
+  		display: inline-block;
   	}
 }
