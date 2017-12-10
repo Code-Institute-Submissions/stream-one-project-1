@@ -3,6 +3,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
     padding-bottom: 50px;
     background-color: #8080ff;
+    margin-top: 40px;
+    font-weight: bold;
 }
 footer {
 	background-color: #333;
