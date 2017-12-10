@@ -4,9 +4,4 @@ angular.module('SebAppDirectives',[])
             restrict: 'EA',
             templateUrl: 'templates/directives/jobs-list.html'
         };
-    });
-
-   
-
-
-    
+    }); 
